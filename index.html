@@ -1,25 +1,14 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
   <head>
     <title>MNSU Anime Club :D</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
-      :root {
-      --headline-font: 'Quattrocento', serif;       /* Closest to Quatro Slab */
-      --body-font: 'Quattrocento Sans', sans-serif; /* Closest to Quatro */
-    }
-
-    /* Apply fonts to elements */
-    .banner h1 {
-      font-family: var(--headline-font);
-    }
-
-    body {
-      font-family: var(--body-font);
-    }
-
       :root {
         --main-purple: #49306e;
         --accent-gold: #febd11;
+        --headline-font: 'Quattrocento', serif;
+        --body-font: 'Quattrocento Sans', sans-serif;
       }
 
       /* Banner Styles */
@@ -32,7 +21,7 @@
           url('https://images.unsplash.com/photo-1632153433987-c0cb7a160d1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
         background-size: cover;
         background-position: center;
-        height: 20vh;
+        height: 40vh; /* Increased height for buttons */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -45,39 +34,47 @@
         color: white;
         padding: 2rem;
         max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
       }
 
       .banner h1 {
         font-size: 3.5rem;
-        margin-bottom: 1rem;
-        font-family: 'Arial Rounded MT Bold', sans-serif;
+        margin: 0;
         color: var(--accent-gold);
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        font-family: var(--headline-font);
       }
 
-      .banner p {
-        font-size: 1.5rem;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-        margin-bottom: 2rem;
+      /* Button Container */
+      .button-container {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
-      /* Content Box */
-      .content-box {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 2rem;
-        background-color: rgba(255, 255, 255, 0.9);
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border: 3px solid var(--main-purple);
-      }
-
-      .content-box h1 {
+      /* Button Styles */
+      .nav-button {
+        background-color: var(--accent-gold);
         color: var(--main-purple);
+        padding: 12px 30px;
+        border: none;
+        border-radius: 25px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: transform 0.2s, background-color 0.2s;
+        text-decoration: none;
+        font-family: var(--body-font);
+        font-weight: 700;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       }
 
-      .content-box p {
-        color: #333;
+      .nav-button:hover {
+        background-color: #ffd369;
+        transform: translateY(-2px);
       }
 
       /* Mobile Responsive */
@@ -98,7 +95,13 @@
     <!-- Anime Banner -->
     <div class="banner">
       <div class="banner-content">
-        <h1>MNSU Anime Club </h1>
+        <h1>MNSU Anime Club 🎌</h1>
+        <div class="button-container">
+          <a href="#" class="nav-button">Home</a>
+          <a href="#" class="nav-button">Events</a>
+          <a href="#" class="nav-button">About</a>
+          <a href="#" class="nav-button">Contact</a>
+        </div>
       </div>
     </div>
 
