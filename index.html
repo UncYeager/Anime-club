@@ -1,13 +1,110 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> MNSU Anime Club :D </title>
-    <link rel="stylesheet" href="style.css">
-  </head> 
+    <title>MNSU Anime Club :D</title>
+    <style>
+      /* Banner Styles */
+      .banner {
+        background-image: url('https://images.unsplash.com/photo-1632153433987-c0cb7a160d1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 2rem;
+      }
+
+      .banner::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      .banner-content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        color: white;
+        padding: 2rem;
+        max-width: 800px;
+      }
+
+      .banner h1 {
+        font-size: 3.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        margin-bottom: 1rem;
+        font-family: 'Arial Rounded MT Bold', sans-serif;
+      }
+
+      .banner p {
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        margin-bottom: 2rem;
+      }
+
+      /* Existing Content Box */
+      .content-box {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Join Button */
+      .join-button {
+        background-color: #ff6b6b;
+        color: white;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 25px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: transform 0.2s, background-color 0.2s;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .join-button:hover {
+        background-color: #ff5252;
+        transform: scale(1.05);
+      }
+
+      /* Mobile Responsive */
+      @media (max-width: 768px) {
+        .banner h1 {
+          font-size: 2.5rem;
+        }
+        .banner p {
+          font-size: 1.2rem;
+        }
+        .banner {
+          height: 50vh;
+        }
+      }
+    </style>
+  </head>
   <body>
-  <div class="content-box">
-    <h1> MNSU Anime club</h1>
-    <p> This is the offical website of the MNSU Anime Club. :D </p>
-  </div>
+    <!-- Anime Banner -->
+    <div class="banner">
+      <div class="banner-content">
+        <h1>MNSU Anime Club 🎌</h1>
+        <p>Join our community of passionate anime fans!</p>
+        <a href="#join" class="join-button">Join Now</a>
+      </div>
+    </div>
+
+    <!-- Existing Content Box -->
+    <div class="content-box">
+      <h1>MNSU Anime Club</h1>
+      <p>This is the official website of the MNSU Anime Club. :D</p>
+    </div>
   </body>
 </html>
