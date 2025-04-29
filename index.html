@@ -21,74 +21,37 @@
           url('https://images.unsplash.com/photo-1632153433987-c0cb7a160d1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
         background-size: cover;
         background-position: center;
-        height: 40vh; /* Increased height for buttons */
+        height: 40vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
         margin-bottom: 2rem;
       }
 
-      .banner-content {
-        text-align: center;
-        color: white;
-        padding: 2rem;
+      /* ADD THIS SECTION BACK */
+      .content-box {
         max-width: 800px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-      }
-
-      .banner h1 {
-        font-size: 3.5rem;
-        margin: 0;
-        color: var(--accent-gold);
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-        font-family: var(--headline-font);
-      }
-
-      /* Button Container */
-      .button-container {
-        display: flex;
-        gap: 1.5rem;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-
-      /* Button Styles */
-      .nav-button {
-        background-color: var(--accent-gold);
-        color: var(--main-purple);
-        padding: 12px 30px;
-        border: none;
-        border-radius: 25px;
-        font-size: 1.1rem;
-        cursor: pointer;
-        transition: transform 0.2s, background-color 0.2s;
-        text-decoration: none;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border: 3px solid var(--main-purple);
         font-family: var(--body-font);
-        font-weight: 700;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
       }
 
-      .nav-button:hover {
-        background-color: #ffd369;
-        transform: translateY(-2px);
+      .content-box h1 {
+        color: var(--main-purple);
+        font-family: var(--headline-font);
+        margin-top: 0;
       }
 
-      /* Mobile Responsive */
-      @media (max-width: 768px) {
-        .banner h1 {
-          font-size: 2.5rem;
-        }
-        .banner p {
-          font-size: 1.2rem;
-        }
-        .banner {
-          height: 50vh;
-        }
+      .content-box p {
+        color: #333;
+        line-height: 1.6;
       }
+
+      /* Rest of your existing CSS... */
     </style>
   </head>
   <body>
