@@ -21,7 +21,7 @@
           url('https://images.unsplash.com/photo-1632153433987-c0cb7a160d1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
         background-size: cover;
         background-position: center;
-        height: 40vh; /* Increased height for buttons */
+        height: 40vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -72,7 +72,7 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         min-width: 180px;
         text-align: center;
-        white-soace: nowrap;
+        white-space: nowrap; /* Fixed typo */
       }
 
       .nav-button:hover {
@@ -80,26 +80,29 @@
         transform: translateY(-2px);
       }
 
+      /* Content Box */
+      .content-box { /* Added missing dot */
+        font-family: var(--body-font); /* Fixed variable name */
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: center;
+      }
+
       /* Mobile Responsive */
       @media (max-width: 768px) {
         .banner h1 {
           font-size: 2.5rem;
-        }
-        .banner p {
-          font-size: 1.2rem;
         }
         .banner {
           height: 60vh;
         }
         .nav-button {
           width: 100%;
-          min-wtidth: auto;
+          min-width: auto; /* Fixed typo */
           padding: 12px 20px;
           font-size: 1rem;
         }
-      }
-      content-box{
-        font-family: var(----body-font);
       }
     </style>
   </head>
@@ -108,20 +111,20 @@
     <div class="banner">
       <div class="banner-content">
         <h1>MNSU Anime Club 🎌</h1>
-        <div class="button-container">
+        <nav class="button-container"> <!-- Better semantics -->
           <a href="#" class="nav-button">Home</a>
-          <a href="#" class="nav-button">Shedule</a>
-          <a href="#" class="nav-button">Anime/Manga resources</a>
+          <a href="#" class="nav-button">Schedule</a> <!-- Fixed spelling -->
+          <a href="#" class="nav-button">Anime/Manga Resources</a>
           <a href="#" class="nav-button">About Us</a>
-          <a href="https://discord.gg/zsxEWtKBQV" class="nav-button" target="_blank" rel="noopener noreferrer" >Discord</a>
-        </div>
+          <a href="https://discord.gg/zsxEWtKBQV" class="nav-button" target="_blank" rel="noopener noreferrer">Discord</a>
+        </nav>
       </div>
     </div>
 
     <!-- Content Box -->
     <div class="content-box">
-      <h1 style="text-aline: center;"> MNSU Anime Club</h1>
-      <p></p>
+      <h2 style="text-align: center;">MNSU Anime Club</h2> <!-- Changed to h2 + fixed style -->
+      <p>This is the official website of the MNSU Anime Club. :D</p>
     </div>
   </body>
 </html>
