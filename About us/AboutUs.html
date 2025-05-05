@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Us | MNSU Anime Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --main-purple: #49306e;
+        --accent-gold: #febd11;
+        --headline-font: 'Quattrocento', serif;
+        --body-font: 'Quattrocento Sans', sans-serif;
+      }
+
+      /* Banner Styles */
+      .banner {
+        background-image: linear-gradient(
+            to right,
+            rgba(73, 48, 110, 0.9),
+            rgba(73, 48, 110, 0.7)
+          ),
+          url('https://images.unsplash.com/photo-1632153433987-c0cb7a160d1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 2rem;
+      }
+
+      .banner-content {
+        text-align: center;
+        color: white;
+        padding: 2rem;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .banner h1 {
+        font-size: 3.5rem;
+        margin: 0;
+        color: var(--accent-gold);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        font-family: var(--headline-font);
+      }
+
+      /* Button Container */
+      .button-container {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      /* Button Styles */
+      .nav-button {
+        background-color: var(--accent-gold);
+        color: var(--main-purple);
+        padding: 12px 30px;
+        border: none;
+        border-radius: 25px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: transform 0.2s, background-color 0.2s;
+        text-decoration: none;
+        font-family: var(--body-font);
+        font-weight: 700;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        min-width: 180px;
+        text-align: center;
+        white-space: nowrap;
+      }
+
+      .nav-button:hover {
+        background-color: #ffd369;
+        transform: translateY(-2px);
+      }
+
+      /* Content Box */
+      .content-box {
+        font-family: var(--body-font);
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      /* About Us Styles */
+      .about-container {
+        background-color: white;
+        border-radius: 10px;
+        padding: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-section {
+        margin-bottom: 2rem;
+      }
+
+      .about-section h2 {
+        color: var(--main-purple);
+        border-bottom: 2px solid var(--accent-gold);
+        padding-bottom: 0.5rem;
+        font-family: var(--headline-font);
+      }
+
+      .officer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      .officer-card {
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        padding: 1.5rem;
+        text-align: center;
+      }
+
+      .officer-card img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        border: 3px solid var(--accent-gold);
+      }
+
+      .officer-card h3 {
+        color: var(--main-purple);
+        margin: 0.5rem 0;
+      }
+
+      .officer-position {
+        color: #666;
+        font-style: italic;
+        margin-bottom: 0.5rem;
+      }
+
+      /* Mobile Responsive */
+      @media (max-width: 768px) {
+        .banner h1 {
+          font-size: 2.5rem;
+        }
+        .banner {
+          height: 60vh;
+        }
+        .nav-button {
+          width: 100%;
+          min-width: auto;
+          padding: 12px 20px;
+          font-size: 1rem;
+        }
+        .officer-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Anime Banner -->
+    <div class="banner">
+      <div class="banner-content">
+        <h1>About Our Club 🎌</h1>
+        <nav class="button-container">
+          <a href="../index.html" class="nav-button">Home</a>
+          <a href="../Schedule/Schedule.html" class="nav-button">Schedule</a>
+          <a href="../AnimeManga Resources/Resources.html" class="nav-button">Anime/Manga Resources</a>
+          <a href="#" class="nav-button">About Us</a>
+          <a href="https://discord.gg/zsxEWtKBQV" class="nav-button" target="_blank" rel="noopener noreferrer">Discord</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- About Us Content -->
+    <div class="content-box">
+      <div class="about-container">
+        <div class="about-section">
+          <h2>Our Mission</h2>
+          <p>The MNSU Anime Club is dedicated to creating a welcoming community for anime and manga enthusiasts. We provide a space for students to share their passion, discover new series, and connect with like-minded individuals through screenings, discussions, and special events.</p>
+        </div>
+
+        <div class="about-section">
+          <h2>Club History</h2>
+          <p>Founded in 2010, the MNSU Anime Club has grown from a small group of anime fans to one of the most active student organizations on campus. Over the years, we've hosted numerous events, convention trips, and even helped organize the first Minnesota State University anime convention in 2018.</p>
+        </div>
+
+        <div class="about-section">
+          <h2>What We Do</h2>
+          <ul>
+            <li>Weekly anime screenings and discussions</li>
+            <li>Manga reading groups and book clubs</li>
+            <li>Cosplay workshops and competitions</li>
+            <li>Gaming nights with anime-themed games</li>
+            <li>Group trips to anime conventions</li>
+            <li>Community service and campus events</li>
+          </ul>
+        </div>
+
+        <div class="about-section">
+          <h2>Meet Our Officers</h2>
+          <div class="officer-grid">
+            <div class="officer-card">
+              <img src="https://via.placeholder.com/150" alt="Club President">
+              <h3>Alex Tanaka</h3>
+              <div class="officer-position">President</div>
+              <p>3rd year Computer Science major</p>
+            </div>
+            <div class="officer-card">
+              <img src="https://via.placeholder.com/150" alt="Vice President">
+              <h3>Jamie Rodriguez</h3>
+              <div class="officer-position">Vice President</div>
+              <p>2nd year Art major</p>
+            </div>
+            <div class="officer-card">
+              <img src="https://via.placeholder.com/150" alt="Treasurer">
+              <h3>Taylor Smith</h3>
+              <div class="officer-position">Treasurer</div>
+              <p>4th year Business major</p>
+            </div>
+            <div class="officer-card">
+              <img src="https://via.placeholder.com/150" alt="Event Coordinator">
+              <h3>Casey Johnson</h3>
+              <div class="officer-position">Event Coordinator</div>
+              <p>2nd year Theater major</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-section">
+          <h2>Join Us!</h2>
+          <p>All MNSU students are welcome to join our club! No prior anime knowledge is required - just bring your enthusiasm. Meetings are held weekly in the Student Union. Check our <a href="../Schedule/Schedule.html">schedule</a> for specific times and locations.</p>
+          <p>For more information, contact us at <a href="mailto:animeclub@mnsu.edu">animeclub@mnsu.edu</a> or join our <a href="https://discord.gg/zsxEWtKBQV" target="_blank">Discord server</a>.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
