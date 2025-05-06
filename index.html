@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MNSU Anime Club :D</title>
     <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -72,7 +74,7 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         min-width: 180px;
         text-align: center;
-        white-space: nowrap; /* Fixed typo */
+        white-space: nowrap;
       }
 
       .nav-button:hover {
@@ -81,12 +83,19 @@
       }
 
       /* Content Box */
-      .content-box { /* Added missing dot */
-        font-family: var(--body-font); /* Fixed variable name */
+      .content-box {
+        font-family: var(--body-font);
         max-width: 800px;
         margin: 0 auto;
         padding: 2rem;
-        text-align: center;
+      }
+
+      /* About Us Styles */
+      .about-container {
+        background-color: white;
+        border-radius: 10px;
+        padding: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
 
       /* Mobile Responsive */
@@ -99,7 +108,7 @@
         }
         .nav-button {
           width: 100%;
-          min-width: auto; /* Fixed typo */
+          min-width: auto;
           padding: 12px 20px;
           font-size: 1rem;
         }
@@ -110,12 +119,12 @@
     <!-- Anime Banner -->
     <div class="banner">
       <div class="banner-content">
-        <h1>MNSU Anime Club </h1>
-        <nav class="button-container"> <!-- Better semantics -->
-          <a href="https://uncyeager.github.io/Anime-club/index.html#" class="nav-button">Home</a>
-          <a href="Schedule/Schedule.html" class="nav-button">Schedule</a> <!-- Fixed spelling -->
-          <a href="AnimeManga Resources/Resources.html" class="nav-button">Anime/Manga Resources</a>
-          <a href="About us/AboutUs.html" class="nav-button">About Us</a>
+        <h1>MNSU Anime Club</h1>
+        <nav class="button-container">
+          <a href="index.html" class="nav-button">Home</a>
+          <a href="schedule.html" class="nav-button">Schedule</a>
+          <a href="resources.html" class="nav-button">Anime/Manga Resources</a>
+          <a href="about.html" class="nav-button">About Us</a>
           <a href="https://discord.gg/zsxEWtKBQV" class="nav-button" target="_blank" rel="noopener noreferrer">Discord</a>
         </nav>
       </div>
@@ -123,7 +132,7 @@
 
     <!-- Content Box -->
     <div class="content-box">
-      <h2 style="text-align: center;">MNSU Anime Club</h2> <!-- Changed to h2 + fixed style -->
+      <h2 style="text-align: center;">MNSU Anime Club</h2>
       <p>This is the official website of the MNSU Anime Club. :D</p>
     </div>
   </body>
